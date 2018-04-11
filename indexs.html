@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Address Book</title>
+
+	<link rel="stylesheet" href="ind.css">
+</head>
+<body><div class="container">
+  <header class="headerbar top">
+    <h1>My Address Book </h1>
+  </header>
+  <aside class="leftbar">
+    <div>
+    	<fieldset>
+    	  <label for=name>Name</label>
+    	  <input type="text" placeholder="enter your name" id="name">
+    	</fieldset>
+    	<fieldset>
+    	  <label for=name>Address</label>
+    	  <input type="text" placeholder="enter your address" id="address">
+    	</fieldset>
+    	<fieldset>
+    	  <label for=name>Email</label>
+    	  <input type="email" placeholder="enter your email" id="email">
+    	</fieldset>
+    	<fieldset>
+    	  <label for=name>Phone Number</label>
+    	  <input type="number" placeholder="enter your number" id="phone">
+    	</fieldset>
+    	<fieldset>
+        <label for="submit">&nbsp</label>
+        <button id="submit" onclick="addContact()">AddToContact</button>
+      </fieldset>
+		</div>
+		<div id="display">
+			<fieldset>
+				<textarea id="showtext" readonly></textarea>
+				<label for="button">&nbsp</label>
+				<button onclick="clearTextarea()">Clear Screen</button>
+				<button id="edite">
+          EditMode
+				 </button>
+				<button id='clicker' > Delete</button>
+			</fieldset>
+		</div>
+  </aside>
+  <aside class="rightbar">
+    <div id="directory">
+      <h3>All My Contact</h3>
+      <ul id="contactList"></ul>
+    </div>
+  </aside>
+  
+</div> 
+	<script src="index.js"></script>
+</body>
+</html>
